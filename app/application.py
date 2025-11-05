@@ -62,9 +62,9 @@ def index():
     ## Render chat history
     return render_template("index.html", messages=session.get("messages", []))
 
-@app.route("/metrics")
-def metrics():
-    return Response(generate_latest(), mimetype="text/plain")
+# @app.route("/metrics")
+# def metrics():
+#     return Response(generate_latest(), mimetype="text/plain")
 
 @app.route("/clear")
 def clear():
