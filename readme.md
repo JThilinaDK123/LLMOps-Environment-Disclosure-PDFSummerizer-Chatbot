@@ -70,7 +70,7 @@ pip install -e .
 
 8. Inside the `config` folder, create the following Python scripts:
 
-- `config.py` # All the congigurations
+- `config.py` # All the configurations
 
 9. Inside the `templates` folder, create the following html file:
 
