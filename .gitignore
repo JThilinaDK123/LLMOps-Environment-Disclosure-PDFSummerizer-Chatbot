@@ -1,0 +1,6 @@
+.env
+Workflow.docx
+~$rkflow.docx
+venv/
+logs/
+Environment_Disclosure_pdf_Summerizer_Chatbot.egg-info/
