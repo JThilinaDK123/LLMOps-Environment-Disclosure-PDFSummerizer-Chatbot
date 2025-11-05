@@ -1,4 +1,4 @@
-# Environmental Disclosure Documents Summerizer Chatbot (EcoDigest) using LLM
+# Environmental Disclosure Documents Chatbot (EcoDigest) using LLM
 
 ## Tech Stack
 
