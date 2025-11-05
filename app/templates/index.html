@@ -216,7 +216,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>🩺 AI Medical Chatbot</h1>
+        <h1>EcoDigest</h1>
 
         {% if error %}
             <p class="error">{{ error }}</p>
@@ -240,7 +240,7 @@
         </div>
 
         <form method="post" action="{{ url_for('index') }}">
-            <textarea name="prompt" placeholder="Ask a medical question..." required></textarea>
+            <textarea name="prompt" placeholder="Ask an question..." required></textarea>
             <button type="submit">Send</button>
         </form>
 

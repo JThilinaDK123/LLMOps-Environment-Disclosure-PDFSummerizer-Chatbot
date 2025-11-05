@@ -19,7 +19,7 @@ spec:
         image: llmops-app:latest  # Use local image
         imagePullPolicy: IfNotPresent
         ports:
-          - containerPort: 5000
+          - containerPort: 8012
         envFrom:
           - secretRef:
               name: llmops-secrets # Pass the environment variables from the secret
@@ -36,4 +36,4 @@ spec:
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 5000
+      targetPort: 8012
