@@ -1,9 +1,8 @@
-from flask import Flask, render_template, request, session, redirect, url_for, Response
+from flask import Flask, render_template, request, session, redirect, url_for
 from markupsafe import Markup
 import markdown 
 from dotenv import load_dotenv
 from app.components.retriever import create_qa_chain
-from prometheus_client import Counter,generate_latest
 import os
 
 
@@ -62,9 +61,6 @@ def index():
     ## Render chat history
     return render_template("index.html", messages=session.get("messages", []))
 
-# @app.route("/metrics")
-# def metrics():
-#     return Response(generate_latest(), mimetype="text/plain")
 
 @app.route("/clear")
 def clear():
@@ -76,7 +72,7 @@ def clear():
 if __name__ == "__main__":
     app.run(
         host="0.0.0.0",
-        port=8501,
+        port=5000,
         debug=False,
         use_reloader=False,
     )
